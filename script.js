@@ -9,7 +9,7 @@ var base = new Airtable(
 
 // "Table 1" is tab text of my base
 base("Table 1").select({
-  maxRecords: 2,
+
   // view: "Grid view", 
 })
 .eachPage(
@@ -28,6 +28,11 @@ base("Table 1").select({
         var albumCover = document.createElement("img");
         // put airtable img src inside our html img tag 
         albumCover.src = record.fields.AlbumCover[0].url;
+        // append to new img tag to html document
+        document.body.appendChild(albumCover);
+        
+        var artistName = document.createElement("span");
+        artistName.innerHTML 
         
       }
     
