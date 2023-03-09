@@ -7,7 +7,16 @@ var base = new Airtable(
   {apiKey:"keyDd4ipeCQWl3r7x"}
 ).base("app8mVXPpMc3jUhsk");
 
-
+// "Table 1" is tab text of my base
+base("Table 1").select({
+  maxRecords: 2,
+  view: "Grid view", 
+})
+.eachPage(
+  function page(records, fetchNextPage){
+    console.log("running page function")
+  }
+);
 
 
 console.log(base);
