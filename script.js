@@ -9,12 +9,20 @@ var base = new Airtable(
 
 // "Table 1" is tab text of my base
 base("Table 1").select({
-  maxRecords: 2,
+  // maxRecords: 2,
   view: "Grid view", 
 })
 .eachPage(
   function page(records, fetchNextPage){
-    console.log("running page function")
+    // console.log("running page function")
+    // console.log("records:", records);
+    // records = [Record1, Record2, Record3]
+    records.forEach(
+      function (record) {
+        console.log("this is one record:", record)
+      }
+    
+    )
   }
 );
 
