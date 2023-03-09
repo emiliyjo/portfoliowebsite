@@ -20,10 +20,14 @@ base("Table 1").select({
     records.forEach(
       function (record) {
         // console.log("this is one record:", record); 
-        console.log("this is my airtable fields", record.fields);
-        console.log("Date Field", record.fields.Date);
-        console.log("Artist Name", record.fields.ArtistName);
-        console.log("Album Cover", record.fields.AlbumCover);
+        // console.log("this is my airtable fields", record.fields);
+        // console.log("Date Field", record.fields.Date);
+        // console.log("Artist Name", record.fields.ArtistName);
+        console.log("Album Cover", record.fields.AlbumCover[0].url);
+        // create an img html element 
+        var albumCover = document.createElement("img");
+        // put airtable img src inside our html img tag 
+        albumCover.src = record.fields.AlbumCover[0].url;
         
       }
     
