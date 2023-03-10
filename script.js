@@ -31,7 +31,7 @@ base("Table 1").select({
         albumCover.classList.add("airtable-image");
         // put airtable img src inside our html img tag 
         albumCover.src = record.fields.AlbumCover[0].url;
-        // append to new img tag to html document
+        // append new img tag to html document
         document.body.appendChild(albumCover);
         
         var artistName = document.createElement("span");
