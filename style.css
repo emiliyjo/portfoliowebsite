@@ -1,3 +1,7 @@
 .airtable-image{
   width: 200px; 
 }
+
+.airtable-item{
+  border: 1px solid black; 
+}

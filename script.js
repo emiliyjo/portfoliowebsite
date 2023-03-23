@@ -17,6 +17,7 @@ base("Table 1").select({
         // each record will have its own div
         let airtableItem = document.createElement("div");
         // add some data specific meta to my new divs for filtering
+        airtableItem.classList.add("airtable-item");
         airtableItem.setAttribute("data-mood", record.fields.Mood);
         
         
@@ -32,10 +33,23 @@ base("Table 1").select({
         airtableItem.append(artistName);
        // append div to body 
         document.body.append(airtableItem);
-        
-        
       }
     
     )
   }
 ); 
+
+// set up a event listener for my empowering button 
+// listen for user clicker, once it is clicker, serach for divs with data-mood, empowering 
+
+// get our button using css ID 
+// assign a event listener to my button to listen for click
+let empoweringFilterBtn = document.getElementById("filter-empowering");
+empoweringFilterBtn.addEventListener("click", function(event){
+  console.log(event);
+  
+  
+  
+});
+
+
