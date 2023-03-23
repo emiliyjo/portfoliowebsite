@@ -17,7 +17,7 @@ base("Table 1").select({
         // each record will have its own div
         let airtableItem = document.createElement("div");
         // add some data specific meta to my new divs for filtering
-        
+        airtableItem.setAttribute("data-mood", record.fields.Mood);
         
         
         // create a img tag for my album art 
