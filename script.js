@@ -38,6 +38,13 @@ base("Table 1").select({
         artistName.innerHTML = record.fields.ArtistName;
         document.body.appendChild(artistName);
         
+        // create new html element > img, span, div, h1
+        // get data from airtable > cover art, artist name, location, etc 
+        // set content of html element to the specific airtable data > cover art url > img url, location > h1.innerhtml
+        // append the html element to the body section of your html page 
+        // <body>
+            // <img src ="">
+        // </body>
       }
     
     )
