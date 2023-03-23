@@ -57,8 +57,11 @@ empoweringFilterBtn.addEventListener("click", function(event){
       // if item.dataset.mood equal to "Empowering, then we trigger something 
       if (item.dataset.mood == "Empowering") {
         // if the div has data-mood empowering, add red background by adding css class
-        item.class
+        item.classList.add("empowering-filter-show");
         console.log(item);
+      }
+      else {
+        item.classList.add("empowering-filter-hide");
       }
       
       

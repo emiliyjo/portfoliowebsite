@@ -9,3 +9,7 @@
 .empowering-filter-show{
   background-color: red;
 }
+
+.empowering-filter-hide{
+  opacity: 0;
+}
