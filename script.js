@@ -51,7 +51,19 @@ empoweringFilterBtn.addEventListener("click", function(event){
   // put my airtable-divs in an array [airtable-div 1, airtable-div-2], find the div tht has data-mood
   let listofAirtableItems = document.querySelectorAll("div.airtable-item");
   
-  listOfAirtableItem.forEach
+  // search for data-mood, containg empowering 
+  listofAirtableItems.forEach(
+    function searchEmpoweringFilter(item){
+      // if item.dataset.mood equal to "Empowering, then we trigger something 
+      if (item.dataset.mood == "Empowering") {
+        // if the div has data-mood empowering, add red background by adding css class
+        item.class
+        console.log(item);
+      }
+      
+      
+    }
+  )
   
 });
 
