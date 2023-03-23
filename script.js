@@ -9,7 +9,7 @@ var base = new Airtable(
 
 // "Table 1" is tab text of my base
 base("Table 1").select({
-
+  
   // view: "Grid view", 
 })
 .eachPage(
