@@ -44,11 +44,14 @@ base("Table 1").select({
 
 // get our button using css ID 
 // assign a event listener to my button to listen for click
-let empoweringFilterBtn = document.getElementById("filter-empowering");
+let empoweringFilterBtn = document.getElementById("Empowering");
 empoweringFilterBtn.addEventListener("click", function(event){
-  console.log(event);
+  console.log("this is filter being pressed:", event.target.id);
+  // search my airtable-item divs, and see which data-mood contains "empowering"
+  // put my airtable-divs in an array [airtable-div 1, airtable-div-2], find the div tht has data-mood
+  let listofAirtableItems = document.querySelectorAll("div.airtable-item");
   
-  
+  listOfAirtableItem.forEach
   
 });
 
