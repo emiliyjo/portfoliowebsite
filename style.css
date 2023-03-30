@@ -8,8 +8,9 @@
 
 .empowering-filter-show{
   background-color: red;
+  display: block;
 }
 
 .empowering-filter-hide{
-  opacity: 0;
+  display: none; 
 }
