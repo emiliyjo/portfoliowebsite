@@ -7,7 +7,7 @@ var base = new Airtable({ apiKey: "keyNgZNOwpH4aj3ex" }).base(
 
 base("Table 1")
   .select({
-    maxRecords: 50,
+    maxRecords: 20,
     // view: "Grid view",
   })
   .eachPage(function page(records, fetchNextPage) {

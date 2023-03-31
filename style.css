@@ -6,12 +6,12 @@
   border: 1px solid black; 
 }
 
-.empowering-filter-show{
-  background-color: red;
+.Modernism-filter-show{
+  background-color: white;
   display: block;
 }
 
-.empowering-filter-hide{
+.Modernism-filter-hide{
   display: none; 
 }
 
