@@ -43,34 +43,12 @@ base("Table 1")
 // set up a event listener for my empowering button
 // listen for user clicker, once it is clicker, serach for divs with data-mood, empowering
 
-// get our button using css ID
-// assign a event listener to my button to listen for click
-let ModernismFilterBtn = document.getElementById("Modernism");
-ModernismFilterBtn.addEventListener("click", function (event) {
-  console.log("this is filter being pressed:", event.target.id);
-  // search my airtable-item divs, and see which data-mood contains "Modernism"
-  // put my airtable-divs in an array [airtable-div 1, airtable-div-2], find the div tht has data-mood
-  let listofAirtableItems = document.querySelectorAll(".airtable-item");
-  
-  console.log('listofAirtableItems', listofAirtableItems)
 
-  // search for data-mood, containg Modernism
-  listofAirtableItems.forEach((item) => {
-    console.log('item', item)
-    // if item.dataset.Style equal to "Modernism, then we trigger something
-    if (item.dataset.style == "Modernism") {
-      // if the div has data-Style Modernism, add red background by adding css class
-      item.classList.remove("hidden");
-      console.log('show',item);
-    } else {
-      item.classList.add("hidden");
-      console.log('hide',item);
-    }
-  });
-});
 
 document.querySelectorAll('.btn-filter').forEach(btn => {
+  console.log('btn', btn)
   btn.addEventListener('click', (event) => {
+    console.log('event', event)
     let listofAirtableItems = document.querySelectorAll(".airtable-item");
   
   console.log('listofAirtableItems', listofAirtableItems)
@@ -79,7 +57,7 @@ document.querySelectorAll('.btn-filter').forEach(btn => {
   listofAirtableItems.forEach((item) => {
     console.log('item', item)
     // if item.dataset.Style equal to "Modernism, then we trigger something
-    if (item.dataset.style == e.target.dataset.style) {
+    if (item.dataset.style == event.target.dataset.style) {
       // if the div has data-Style Modernism, add red background by adding css class
       item.classList.remove("hidden");
       console.log('show',item);
