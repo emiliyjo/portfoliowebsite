@@ -50,10 +50,13 @@ ModernismFilterBtn.addEventListener("click", function (event) {
   console.log("this is filter being pressed:", event.target.id);
   // search my airtable-item divs, and see which data-mood contains "Modernism"
   // put my airtable-divs in an array [airtable-div 1, airtable-div-2], find the div tht has data-mood
-  let listofAirtableItems = document.querySelectorAll("div.airtable-item");
+  let listofAirtableItems = document.querySelectorAll(".airtable-item");
+  
+  console.log('listofAirtableItems', listofAirtableItems)
 
   // search for data-mood, containg Modernism
-  listofAirtableItems.forEach(function searchModernismFilter(item) {
+  listofAirtableItems.forEach((item) => {
+    console.log('item', item)
     // if item.dataset.Style equal to "Modernism, then we trigger something
     if (item.dataset.Style == "Modernism") {
       // if the div has data-Style Modernism, add red background by adding css class
