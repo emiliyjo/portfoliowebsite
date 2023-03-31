@@ -58,12 +58,35 @@ ModernismFilterBtn.addEventListener("click", function (event) {
   listofAirtableItems.forEach((item) => {
     console.log('item', item)
     // if item.dataset.Style equal to "Modernism, then we trigger something
-    if (item.dataset.Style == "Modernism") {
+    if (item.dataset.style == "Modernism") {
       // if the div has data-Style Modernism, add red background by adding css class
-      item.classList.add("Modernism-filter-show");
-      console.log(item);
+      item.classList.remove("hidden");
+      console.log('show',item);
     } else {
-      item.classList.add("Modernism-filter-hide");
+      item.classList.add("hidden");
+      console.log('hide',item);
     }
   });
 });
+
+document.querySelectorAll('.btn-filter').forEach(btn => {
+  btn.addEventListener('click', (event) => {
+    let listofAirtableItems = document.querySelectorAll(".airtable-item");
+  
+  console.log('listofAirtableItems', listofAirtableItems)
+
+  // search for data-mood, containg Modernism
+  listofAirtableItems.forEach((item) => {
+    console.log('item', item)
+    // if item.dataset.Style equal to "Modernism, then we trigger something
+    if (item.dataset.style == e.target.dataset.style) {
+      // if the div has data-Style Modernism, add red background by adding css class
+      item.classList.remove("hidden");
+      console.log('show',item);
+    } else {
+      item.classList.add("hidden");
+      console.log('hide',item);
+    }
+  });
+  })
+})

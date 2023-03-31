@@ -25,3 +25,7 @@
 .title{
   font-family:"positions";
 }
+
+.hidden{
+  display: none
+}
