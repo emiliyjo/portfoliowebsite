@@ -1,5 +1,5 @@
 .airtable-image{
-  width: 200px; 
+  width: 45%; 
 }
 
 .airtable-item{
@@ -19,5 +19,9 @@
   font-family:"positions";
   font-style:normal;
   font-weight:400;
-  src:url("https://cdn.glitch.global/71953842-023c-432f-904b-1aeec73fa940/Positions.otf?v=1679953016615");
+  src:url("https://cdn.glitch.global/891a4201-9aa9-4505-b708-945fc6550182/Positions.otf?v=1680273567782")
+}
+
+.title{
+  font-family:"positions";
 }

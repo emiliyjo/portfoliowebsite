@@ -45,22 +45,22 @@ base("Table 1")
 
 // get our button using css ID
 // assign a event listener to my button to listen for click
-let empoweringFilterBtn = document.getElementById("Empowering");
-empoweringFilterBtn.addEventListener("click", function (event) {
+let ModernismFilterBtn = document.getElementById("Modernism");
+ModernismFilterBtn.addEventListener("click", function (event) {
   console.log("this is filter being pressed:", event.target.id);
-  // search my airtable-item divs, and see which data-mood contains "empowering"
+  // search my airtable-item divs, and see which data-mood contains "Modernism"
   // put my airtable-divs in an array [airtable-div 1, airtable-div-2], find the div tht has data-mood
   let listofAirtableItems = document.querySelectorAll("div.airtable-item");
 
-  // search for data-mood, containg empowering
-  listofAirtableItems.forEach(function searchEmpoweringFilter(item) {
-    // if item.dataset.mood equal to "Empowering, then we trigger something
-    if (item.dataset.mood == "Empowering") {
-      // if the div has data-mood empowering, add red background by adding css class
-      item.classList.add("empowering-filter-show");
+  // search for data-mood, containg Modernism
+  listofAirtableItems.forEach(function searchModernismFilter(item) {
+    // if item.dataset.Style equal to "Modernism, then we trigger something
+    if (item.dataset.Style == "Modernism") {
+      // if the div has data-Style Modernism, add red background by adding css class
+      item.classList.add("Modernism-filter-show");
       console.log(item);
     } else {
-      item.classList.add("empowering-filter-hide");
+      item.classList.add("Modernism-filter-hide");
     }
   });
 });
