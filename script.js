@@ -1,13 +1,13 @@
 // activate airtable object
 var Airtable = require("airtable");
 
-var base = new Airtable({ apiKey: "keyDd4ipeCQWl3r7x" }).base(
-  "app8mVXPpMc3jUhsk"
+var base = new Airtable({ apiKey: "keyNgZNOwpH4aj3ex" }).base(
+  "appFjb0zAISs6yEhk"
 );
 
 base("Table 1")
   .select({
-    maxRecords: 5,
+    maxRecords: 50,
     // view: "Grid view",
   })
   .eachPage(function page(records, fetchNextPage) {
@@ -18,18 +18,23 @@ base("Table 1")
       let airtableItem = document.createElement("div");
       // add some data specific meta to my new divs for filtering
       airtableItem.classList.add("airtable-item");
-      airtableItem.setAttribute("data-mood", record.fields.Mood);
+      airtableItem.setAttribute("data-style", record.fields.Style);
 
       // create a img tag for my album art
-      let albumCover = document.createElement("img");
-      albumCover.src = record.fields.AlbumCover[0].url;
+      let cutleryCover = document.createElement("img");
+      cutleryCover.src = record.fields.image[0].url;
       // create a span for my artist name
-      let artistName = document.createElement("span");
-      artistName.innerHTML = record.fields.ArtistName;
+      let collectionName = document.createElement("h3");
+      collectionName.innerHTML = record.fields.collection;
+      
+        let materialName = document.createElement("h4");
+      materialName.innerHTML = record.fields.material;
+
 
       // appending to div holding each airtable record
-      airtableItem.append(albumCover);
-      airtableItem.append(artistName);
+      airtableItem.append(cutleryCover);
+      airtableItem.append(collectionName);
+      airtableItem.append(materialName);
       // append div to body
       document.body.append(airtableItem);
     });

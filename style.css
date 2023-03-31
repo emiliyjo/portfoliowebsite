@@ -14,3 +14,10 @@
 .empowering-filter-hide{
   display: none; 
 }
+
+@font-face{
+  font-family:"positions";
+  font-style:normal;
+  font-weight:400;
+  src:url("https://cdn.glitch.global/71953842-023c-432f-904b-1aeec73fa940/Positions.otf?v=1679953016615");
+}
