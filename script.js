@@ -7,7 +7,7 @@ var base = new Airtable({ apiKey: "keyNgZNOwpH4aj3ex" }).base(
 
 base("Table 1")
   .select({
-    maxRecords:10,
+    // maxRecords:10,
     // view: "Grid view",
   })
   .eachPage(function page(records, fetchNextPage) {
@@ -58,7 +58,7 @@ document.querySelectorAll('.btn-filter').forEach(btn => {
     console.log('item', event.target.dataset.style);
     item.classList.remove("hidden");
     // if item.dataset.Style equal to "Modernism, then we trigger something
-    console.log("div dataset", item.dataset.style, "button id", event.target.dataset.style);
+    console.log("div dataset", item.dataset.style, "button id",event.target.dataset.style);
     if (item.dataset.style == event.target.dataset.style) {
       // if the div has data-Style Modernism, add red background by adding css class
       item.classList.remove("hidden");
