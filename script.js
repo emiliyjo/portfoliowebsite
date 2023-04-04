@@ -7,11 +7,11 @@ var base = new Airtable({ apiKey: "keyNgZNOwpH4aj3ex" }).base(
 
 base("Table 1")
   .select({
-    maxRecords: 20,
+    maxRecords:10,
     // view: "Grid view",
   })
   .eachPage(function page(records, fetchNextPage) {
-    console.log("records:", records);
+    // console.log("records:", records);
     records.forEach(function (record) {
       // pull my airtable data
       // each record will have its own div
@@ -46,7 +46,7 @@ base("Table 1")
 
 
 document.querySelectorAll('.btn-filter').forEach(btn => {
-  console.log('btn', btn)
+  // console.log('btn', btn)
   btn.addEventListener('click', (event) => {
     console.log('event', event)
     let listofAirtableItems = document.querySelectorAll(".airtable-item");
@@ -55,8 +55,10 @@ document.querySelectorAll('.btn-filter').forEach(btn => {
 
   // search for data-mood, containg Modernism
   listofAirtableItems.forEach((item) => {
-    console.log('item', item)
+    console.log('item', event.target.dataset.style);
+    item.classList.remove("hidden");
     // if item.dataset.Style equal to "Modernism, then we trigger something
+    console.log("div dataset", item.dataset.style, "button id", event.target.dataset.style);
     if (item.dataset.style == event.target.dataset.style) {
       // if the div has data-Style Modernism, add red background by adding css class
       item.classList.remove("hidden");
