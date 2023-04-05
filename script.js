@@ -29,8 +29,11 @@ base("Table 1")
       
         let materialName = document.createElement("h4");
       materialName.innerHTML = record.fields.material;
-       let YearName = document.createElement("h4");
-      materialName.innerHTML = record.fields.material;
+      
+      let DesignerName = document.createElement("h5");
+      
+      let YearName = document.createElement("h6");
+      YearName.innerHTML = record.fields.Year;
 
 
 
