@@ -15,6 +15,20 @@
   display: none; 
 }
 
+body{
+  margin:0;
+  padding:0;
+}
+
+.container{
+  text-align:center;
+  
+}
+
+.btn-filter{
+  padding:
+}
+
 @font-face{
   font-family:"positions";
   font-style:normal;
@@ -29,3 +43,27 @@
 .hidden{
   display: none
 }
+
+.flex-container {
+  display: flex;
+  background-color: ;
+  flex-wrap: wrap;
+  justify-content:center;
+  width:50vw;
+  flex-direction:row;
+
+}
+.Post Modernism {
+  background-color:ivory;
+   width: 10vw;
+  margin: 30px;
+  height:10vw;
+  text-align:center;
+    line-height: 75px;
+  font-size:30px;
+  flex-wrap:wrap;
+  line-height:60px
+      
+}
+
+
