@@ -46,17 +46,23 @@ body{
 
 .title{
   font-family:"positions";
+  justify-content:center;
 }
 
 .hidden{
   display: none
 }
 
-
 h3{
   font-family:bebas;
+  font-size:30px;
+}
+
+h4{
+  font-family:sans-serif;
 }
 img{
   width:30vw;
   align-items:center;
+  justify-content:center;
 }
