@@ -29,6 +29,10 @@ base("Table 1")
       
         let materialName = document.createElement("h4");
       materialName.innerHTML = record.fields.material;
+       let YearName = document.createElement("h4");
+      materialName.innerHTML = record.fields.material;
+
+
 
 
       // appending to div holding each airtable record

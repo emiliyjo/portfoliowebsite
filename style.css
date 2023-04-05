@@ -26,7 +26,15 @@ body{
 }
 
 .btn-filter{
-  padding:
+  padding:4px 15px;
+  font-family:bebas;
+  background:none;
+  cursor:pointer;
+  
+}
+
+.btn-filter:hover{
+  color:red;
 }
 
 @font-face{
