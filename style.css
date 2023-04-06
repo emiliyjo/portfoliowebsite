@@ -4,6 +4,11 @@
 
 .airtable-item{
   border: 1px solid black; 
+  justify-content:center;
+  align-items:center;
+  flex-direction:row;
+  margin:40px;
+  padding:40px;
 }
 
 .Modernism-filter-show{
