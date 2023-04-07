@@ -42,8 +42,10 @@ base("Table 1")
       airtableItem.append(cutleryCover);
       airtableItem.append(collectionName);
       airtableItem.append(materialName);
+      airtableItem.append(DesignerName)
+      airtableItem.append(YearName)
       // append div to body
-      document.body.append(airtableItem);
+      document.querySelector('.airtable-items').append(airtableItem);
     });
   });
 

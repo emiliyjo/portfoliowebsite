@@ -1,13 +1,22 @@
+.airtable-items{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  justify-content:center;
+}
+
 .airtable-image{
-  width: 45%; 
+  width: auto; 
 }
 
 .airtable-item{
+  display: flex;
+  width: 20%;
   border: 1px solid black; 
   justify-content:center;
   align-items:center;
-  flex-direction:row;
-  margin:40px;
+  flex-direction:column;
+  margin:0;
   padding:40px;
 }
 
