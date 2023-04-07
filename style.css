@@ -3,10 +3,15 @@
   flex-wrap: wrap;
   width: 100vw;
   justify-content:center;
+  margin:20px;
 }
 
 .airtable-image{
   width: auto; 
+}
+
+.airtable-item > img{
+  width:100%;
 }
 
 .airtable-item{
@@ -61,6 +66,7 @@ body{
 .title{
   font-family:"bebas";
   justify-content:center;
+  display:flex;
 }
 
 .hidden{
@@ -74,9 +80,25 @@ h3{
 
 h4{
   font-family:sans-serif;
+  justify-content:center;
+  display:flex;
 }
 img{
   width:30vw;
   align-items:center;
+  justify-content:center;
+}
+
+h6{
+  font-family:"bebas";
+  font-size:20px;
+  justify-content:center;
+  display:flex;
+}
+
+h5{
+  font-family:"bebas";
+  font-size:20px;
+  display:flex;
   justify-content:center;
 }
