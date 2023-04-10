@@ -27,11 +27,12 @@ base("Table 1")
       let collectionName = document.createElement("h3");
       collectionName.innerHTML = record.fields.collection;
       
+        let DesignerName = document.createElement("h5");
+      DesignerName.innerHTML = record.fields.Designer;
+      
         let materialName = document.createElement("h4");
       materialName.innerHTML = record.fields.material;
-      
-      let DesignerName = document.createElement("h5");
-      DesignerName.innerHTML = record.fields.Designer;
+   
       
       let YearName = document.createElement("h6");
       YearName.innerHTML = record.fields.Year;
@@ -42,9 +43,10 @@ base("Table 1")
       // appending to div holding each airtable record
       airtableItem.append(cutleryCover);
       airtableItem.append(collectionName);
+         airtableItem.append(DesignerName)
+       airtableItem.append(YearName)
       airtableItem.append(materialName);
-      airtableItem.append(DesignerName)
-      airtableItem.append(YearName)
+  
       // append div to body
       document.querySelector('.airtable-items').append(airtableItem);
     });
