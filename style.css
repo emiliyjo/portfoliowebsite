@@ -73,30 +73,60 @@ body{
   display: none
 }
 
-h3{
+DATE{
   font-family:"bebas";
-  font-size:30px;
+  font-size:20px;
 }
 
-h4{
+time{
   font-family:"bebas";
   justify-content:center;
   display:flex;
-}
-img{
-  width:30vw;
-  align-items:center;
-  justify-content:center;
+  font-size:20px;
 }
 
-h6{
+age{
   font-family:"bebas";
   font-size:20px;
   justify-content:center;
   display:flex;
+  
 }
 
-h5{
+perpsex{
+  font-family:"bebas";
+  font-size:20px;
+  display:flex;
+  justify-content:center;
+}
+
+perprace{
+  font-family:"bebas";
+  font-size:20px;
+  display:flex;
+  justify-content:center;
+}
+
+perprace{
+  font-family:"bebas";
+  font-size:20px;
+  display:flex;
+  justify-content:center;
+}
+VICAGE{
+  font-family:"bebas";
+  font-size:20px;
+  display:flex;
+  justify-content:center;
+}
+
+VICRACE{
+  font-family:"bebas";
+  font-size:20px;
+  display:flex;
+  justify-content:center;
+}
+VICSEX{
   font-family:"bebas";
   font-size:20px;
   display:flex;

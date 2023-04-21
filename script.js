@@ -5,7 +5,7 @@ var base = new Airtable({ apiKey: "keyNgZNOwpH4aj3ex" }).base(
   "appu1J1FuwPeuC2Vc"
 );
 
-base("Table 1")
+base("Imported table")
   .select({
     // maxRecords:10,
     // view: "Grid view",
@@ -29,14 +29,34 @@ base("Table 1")
         let OCCUR_TIME = document.createElement("time");
       OCCUR_TIME.innerHTML = record.fields.OCCUR_TIME;
       
+        let PERP_AGE_GROUP = document.createElement("age");
+      PERP_AGE_GROUP.innerHTML = record.fields.PERP_AGE_GROUP;
       
-
+      let PERP_SEX = document.createElement("perpsex");
+      PERP_SEX.innerHTML = record.fields.PERP_SEX;
+      
+           let PERP_RACE = document.createElement("perprace");
+      PERP_RACE.innerHTML = record.fields.PERP_RACE;
+      
+                 let VIC_AGE_GROUP = document.createElement("VICAGE");
+      VIC_AGE_GROUP.innerHTML = record.fields.VIC_AGE_GROUP;
+     
+                 let VIC_SEX = document.createElement("VICSEX");
+      VIC_SEX.innerHTML = record.fields.VIC_SEX;
+               let VIC_RACE = document.createElement("VICRACE");
+      VIC_RACE.innerHTML = record.fields.VIC_RACE;
 
 
 
       // appending to div holding each airtable record
       airtableItem.append(OCCUR_DATE);
       airtableItem.append(OCCUR_TIME);
+       airtableItem.append(PERP_AGE_GROUP);
+          airtableItem.append(PERP_SEX);
+                airtableItem.append(PERP_RACE);
+         airtableItem.append(VIC_AGE_GROUP);
+          airtableItem.append(VIC_SEX);
+                airtableItem.append(VIC_RACE);
    
   
       // append div to body
