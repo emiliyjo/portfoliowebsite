@@ -53,7 +53,7 @@ body{
 }
 
 .btn-filter:hover{
-  color:silver;
+  color:red;
 }
 
 @font-face{
@@ -131,4 +131,18 @@ VICSEX{
   font-size:20px;
   display:flex;
   justify-content:center;
+}
+
+.rectangle{
+  width:100%;
+  background-color:yellow;
+  height:20vh;
+}
+
+.img{
+  display:flex;
+  height:30vh;
+}
+.btn-filter{
+  margin:20px;
 }
