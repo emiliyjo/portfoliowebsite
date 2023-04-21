@@ -79,12 +79,12 @@ document.querySelectorAll('.btn-filter').forEach(btn => {
 
   // search for data-mood, containg Manhattan
   listofAirtableItems.forEach((item) => {
-    console.log('item', event.target.dataset.style);
+    console.log('item', event.target.dataset.BORO);
     item.classList.remove("hidden");
-    // if item.dataset.Style equal to "Manhattan, then we trigger something
-    console.log("div dataset", item.dataset.style, "button id",event.target.dataset.style);
-    if (item.dataset.style == event.target.dataset.style) {
-      // if the div has data-Style Manhattan, add red background by adding css class
+    // if item.dataset.BORO equal to "Manhattan, then we trigger something
+    console.log("div dataset", item.dataset.BORO, "button id",event.target.dataset.BORO);
+    if (item.dataset.BORO == event.target.dataset.BORO) {
+      // if the div has data-BORO Manhattan, add red background by adding css class
       item.classList.remove("hidden");
       console.log('show',item);
     } else {
