@@ -119,9 +119,7 @@ Name{
   
 }
 
-.menubtns{
-  width:40px;
-}
+
 .right{
   width:80%;
   height:100%;
@@ -137,6 +135,14 @@ Name{
    padding:160px 30px;
   display:flex;
   flex-direction:column;
+}
+.menubtns{
+  font-family:"futura";
+  width:50px;
+  background:none;
+  display:flex;
+  flex-direction:column;
+
 }
 
 .portfolio{
