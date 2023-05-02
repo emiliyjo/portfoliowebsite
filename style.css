@@ -63,6 +63,13 @@ body{
   src:url("https://cdn.glitch.global/ba2f3613-6939-4e9f-960a-a443e0de51a2/Bebas-Regular.otf?v=1680747441636")
 }
 
+@font-face{
+  font-family:"futura";
+  font-style:normal;
+  font-weight:400;
+  src:url("https://cdn.glitch.global/1d373a5d-bbdf-4df9-a26b-4dce03374c9f/futur.ttf?v=1683043927639");
+}
+
 .title{
   font-family:"bebas";
   justify-content:center;
@@ -73,19 +80,19 @@ body{
   display: none
 }
 
-DATE{
+description{
   font-family:"bebas";
   font-size:20px;
 }
 
-time{
+subject{
   font-family:"bebas";
   justify-content:center;
   display:flex;
   font-size:20px;
 }
 
-Name{
+link{
   font-family:"bebas";
   font-size:20px;
   justify-content:center;
@@ -107,37 +114,7 @@ perprace{
   justify-content:center;
 }
 
-perprace{
-  font-family:"bebas";
-  font-size:20px;
-  display:flex;
-  justify-content:center;
-}
-VICAGE{
-  font-family:"bebas";
-  font-size:20px;
-  display:flex;
-  justify-content:center;
-}
 
-VICRACE{
-  font-family:"bebas";
-  font-size:20px;
-  display:flex;
-  justify-content:center;
-}
-VICSEX{
-  font-family:"bebas";
-  font-size:20px;
-  display:flex;
-  justify-content:center;
-}
-
-.rectangle{
-  width:100%;
-  background-color:yellow;
-  height:20vh;
-}
 
 .img{
   display:flex;
@@ -145,4 +122,33 @@ VICSEX{
 }
 .btn-filter{
   margin:20px;
+}
+
+.left{
+  width:20%;
+  height:100%;
+  
+}
+
+.right{
+  width:80%;
+  height:100%;
+  background-color:none;
+  display:flex;
+  float:right;
+  flex-direction:row;
+}
+
+.menu{
+  font-family:"futura";
+  font-size:8px;
+   padding:160px 30px;
+}
+
+.portfolio{
+  font-size:60px;
+  padding:90px 20px;
+  font-family:futura;
+  position:absolute;
+  bottom:0;
 }

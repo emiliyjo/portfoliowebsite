@@ -67,11 +67,11 @@ document.querySelectorAll('.btn-filter').forEach(btn => {
 
   // search for data-mood, containg Manhattan
   listofAirtableItems.forEach((item) => {
-    console.log('item', event.target.dataset.BORO);
+    console.log('item', event.target.dataset.subject);
     item.classList.remove("hidden");
     // if item.dataset.BORO equal to "Manhattan, then we trigger something
-    console.log("div dataset", item.dataset.BORO, "button id",event.target.dataset.BORO);
-    if (item.dataset.BORO == event.target.dataset.BORO) {
+    console.log("div dataset", item.dataset.subject, "button id",event.target.dataset.subject);
+    if (item.dataset.subject == event.target.dataset.subject) {
       // if the div has data-BORO Manhattan, add red background by adding css class
       item.classList.remove("hidden");
       console.log('show',item);
