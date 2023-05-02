@@ -44,18 +44,10 @@ body{
   
 }
 
-.btn-filter{
-  padding:4px 15px;
-  font-family:bebas;
-  background:none;
-  cursor:pointer;
-  height:30px;
-  display:flex;
-  flex-direction:column;
-  
-}
 
-.btn-filter:hover{
+
+
+.menubtns h1:hover{
   color:red;
 }
 
@@ -116,6 +108,7 @@ Name{
 .left{
   width:20%;
   height:100%;
+  margin:30px;
   
 }
 
@@ -131,7 +124,7 @@ Name{
 
 .menu{
   font-family:"futura";
-  font-size:8px;
+  font-size:9px;
    padding:160px 30px;
   display:flex;
   flex-direction:column;
@@ -151,4 +144,8 @@ Name{
   font-family:futura;
   position:absolute;
   bottom:0;
+}
+
+.type{
+  font-size:20px;
 }
