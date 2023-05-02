@@ -2,10 +2,10 @@
 var Airtable = require("airtable");
 
 var base = new Airtable({ apiKey: "keyNgZNOwpH4aj3ex" }).base(
-  "appu1J1FuwPeuC2Vc"
+  "app3Fc7MxpN0Y2XPY"
 );
 
-base("Imported table")
+base("Table 1")
   .select({
     // maxRecords:10,
     // view: "Grid view",
@@ -23,41 +23,29 @@ base("Imported table")
       // create a img tag for my album art
 
       // create a span for my artist name
-      let OCCUR_DATE = document.createElement("DATE");
-      OCCUR_DATE.innerHTML = record.fields.OCCUR_DATE;
+      let Name = document.createElement("Name");
+      Name.innerHTML = record.fields.Name;
       
-        let OCCUR_TIME = document.createElement("time");
-      OCCUR_TIME.innerHTML = record.fields.OCCUR_TIME;
+        let img = document.createElement("img");
+      img.innerHTML = record.fields.img;
+      let subject = document.createElement("subject");
+        subject.innerHTML = record.fields.subject;
       
-        let PERP_AGE_GROUP = document.createElement("age");
-      PERP_AGE_GROUP.innerHTML = record.fields.PERP_AGE_GROUP;
+      let description = document.createElement("description");
+      description.innerHTML = record.fields.description;
       
-      let PERP_SEX = document.createElement("perpsex");
-      PERP_SEX.innerHTML = record.fields.PERP_SEX;
-      
-           let PERP_RACE = document.createElement("perprace");
-      PERP_RACE.innerHTML = record.fields.PERP_RACE;
-      
-                 let VIC_AGE_GROUP = document.createElement("VICAGE");
-      VIC_AGE_GROUP.innerHTML = record.fields.VIC_AGE_GROUP;
-     
-                 let VIC_SEX = document.createElement("VICSEX");
-      VIC_SEX.innerHTML = record.fields.VIC_SEX;
-               let VIC_RACE = document.createElement("VICRACE");
-      VIC_RACE.innerHTML = record.fields.VIC_RACE;
+           let link = document.createElement("link");
+      link.innerHTML = record.fields.link;
 
 
 
       // appending to div holding each airtable record
-      airtableItem.append(OCCUR_DATE);
-      airtableItem.append(OCCUR_TIME);
-       airtableItem.append(PERP_AGE_GROUP);
-          airtableItem.append(PERP_SEX);
-                airtableItem.append(PERP_RACE);
-         airtableItem.append(VIC_AGE_GROUP);
-          airtableItem.append(VIC_SEX);
-                airtableItem.append(VIC_RACE);
-   
+      airtableItem.append(Name);
+      airtableItem.append(img);
+       airtableItem.append(subject);
+          airtableItem.append(description);
+                airtableItem.append(link);
+       
   
       // append div to body
       document.querySelector('.airtable-items').append(airtableItem);
