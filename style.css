@@ -47,7 +47,7 @@ body{
 
 
 
-.menu h1:hover{
+button:hover{
   color:red;
 }
 
@@ -128,17 +128,10 @@ Name{
   display:flex;
   flex-direction:column;
 }
-.menubtns{
-  font-family:"futura";
-  width:50px;
-  background:none;
-  display:flex;
-  flex-direction:column;
 
-}
 
 .portfolio{
-  font-size:2vw;
+  font-size:2.5vw;
   padding:50px 30px;
   font-family:futura;
   display:flex;
@@ -154,11 +147,12 @@ Name{
 }
 
 button{
+  font-size:18px;
   width:40px;
   font-family:"futura";
   border:none;
   background-color: inherit;
   text-align:left;
-  padding:0px;
+  padding:10px;
 
 }
