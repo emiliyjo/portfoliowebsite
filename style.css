@@ -21,7 +21,7 @@
   justify-content:center;
   align-items:center;
   flex-direction:column;
-  margin:0;
+  margin:50px;
   padding:40px;
 }
 
@@ -49,6 +49,9 @@ body{
   font-family:bebas;
   background:none;
   cursor:pointer;
+  height:30px;
+  display:flex;
+  flex-direction:column;
   
 }
 
@@ -81,45 +84,31 @@ body{
 }
 
 description{
-  font-family:"bebas";
+  font-family:"futura";
   font-size:20px;
 }
 
 subject{
-  font-family:"bebas";
+  font-family:"futura";
   justify-content:center;
   display:flex;
-  font-size:20px;
+  font-size:18px;
 }
 
 link{
-  font-family:"bebas";
-  font-size:20px;
+  font-family:"futura";
+  font-size:10px;
   justify-content:center;
   display:flex;
   
 }
 
-perpsex{
-  font-family:"bebas";
-  font-size:20px;
-  display:flex;
-  justify-content:center;
-}
-
-perprace{
-  font-family:"bebas";
-  font-size:20px;
-  display:flex;
-  justify-content:center;
+Name{
+  font-family:"futura";
+  font-size:30px;
 }
 
 
-
-.img{
-  display:flex;
-  height:30vh;
-}
 .btn-filter{
   margin:20px;
 }
@@ -130,6 +119,9 @@ perprace{
   
 }
 
+.menubtns{
+  width:40px;
+}
 .right{
   width:80%;
   height:100%;
@@ -143,6 +135,8 @@ perprace{
   font-family:"futura";
   font-size:8px;
    padding:160px 30px;
+  display:flex;
+  flex-direction:column;
 }
 
 .portfolio{
