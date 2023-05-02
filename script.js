@@ -21,8 +21,7 @@ base("Table 1")
       airtableItem.setAttribute("data-style", record.fields.Style);
 
       // create a img tag for my portfolio
-   let image = document.createElement("image");
-      image.src = record.fields.image[0].url;
+
       // create a span for my project name
       let Name = document.createElement("Name");
       Name.innerHTML = record.fields.Name;
@@ -39,7 +38,7 @@ base("Table 1")
 
 
       // appending to div holding each airtable record
-      airtableItem.append(image)
+  
       airtableItem.append(Name);
        airtableItem.append(subject);
           airtableItem.append(description);

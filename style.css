@@ -47,7 +47,7 @@ body{
 
 
 
-.menubtns h1:hover{
+.menu h1:hover{
   color:red;
 }
 
@@ -139,12 +139,16 @@ Name{
 
 .portfolio{
   font-size:60px;
-  padding:90px 30px;
+  padding:50px 30px;
   font-family:futura;
-  position:absolute;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+
   bottom:0;
+ 
 }
 
 .type{
-  font-size:20px;
+  font-size:18px;
 }
