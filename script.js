@@ -20,14 +20,13 @@ base("Table 1")
       airtableItem.classList.add("airtable-item");
       airtableItem.setAttribute("data-style", record.fields.Style);
 
-      // create a img tag for my album art
-
-      // create a span for my artist name
+      // create a img tag for my portfolio
+   let image = document.createElement("image");
+      image.src = record.fields.image[0].url;
+      // create a span for my project name
       let Name = document.createElement("Name");
       Name.innerHTML = record.fields.Name;
-      
-        let img = document.createElement("img");
-      img.innerHTML = record.fields.img;
+
       let subject = document.createElement("subject");
         subject.innerHTML = record.fields.subject;
       
@@ -40,8 +39,8 @@ base("Table 1")
 
 
       // appending to div holding each airtable record
+      airtableItem.append(image)
       airtableItem.append(Name);
-      airtableItem.append(img);
        airtableItem.append(subject);
           airtableItem.append(description);
                 airtableItem.append(link);
