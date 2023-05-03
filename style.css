@@ -47,8 +47,10 @@ body{
 
 
 
-button:hover{
-  color:red;
+.menu button:hover{
+      color:white;
+   -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 @font-face{
