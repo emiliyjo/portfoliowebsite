@@ -124,12 +124,14 @@ Name{
 .menu{
   font-family:"futura";
   font-size:9px;
-   padding:160px 40px;
+   padding:150px 40px;
   display:flex;
   flex-direction:column;
 }
 
-.menu 
+.menu h2{
+  padding:9px
+}
 
 
 .portfolio{
@@ -139,7 +141,6 @@ Name{
   display:flex;
   flex-direction:column;
   justify-content:flex-start;
-
   bottom:0;
  
 }
