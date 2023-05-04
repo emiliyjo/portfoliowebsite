@@ -25,26 +25,34 @@ base("Table 1")
       myImage.src = record.fields.image[0].url;
 
       // create a span for my project name
-      let Name = document.createElement("Name");
+      let Name = document.createElement("h2");
+      // adds a class name to the element
+      Name.classList.add("project-name");
       Name.innerHTML = record.fields.Name;
 
-      let subject = document.createElement("subject");
-        subject.innerHTML = record.fields.subject;
+      let subject = document.createElement("h3");
+      subject.innerHTML = record.fields.subject;
       
-      let description = document.createElement("description");
+      let description = document.createElement("p");
       description.innerHTML = record.fields.description;
       
-           let link = document.createElement("link");
-      link.innerHTML = record.fields.link;
-
-
+      let link = document.createElement("p");
+      // link.innerHTML = record.fields.link;
+      
+      let projectLink = document.createElement("a");
+      projectLink.innerHTML = "Project here";
+      projectLink.href = record.fields.link;
+      
+      link.append(projectLink);
 
       // appending to div holding each airtable record
   
+      airtableItem.append(myImage);
       airtableItem.append(Name);
-       airtableItem.append(subject);
-          airtableItem.append(description);
-                airtableItem.append(link);
+      airtableItem.append(subject);
+      airtableItem.append(description);
+      airtableItem.append(link);
+      
        
   
       // append div to body
