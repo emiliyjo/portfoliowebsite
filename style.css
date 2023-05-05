@@ -77,12 +77,12 @@ body{
   display: none
 }
 
-description{
+p{
   font-family:"futura";
   font-size:20px;
 }
 
-subject{
+h3{
   font-family:"futura";
   justify-content:center;
   display:flex;
@@ -97,7 +97,7 @@ link{
   
 }
 
-Name{
+h2{
   font-family:"futura";
   font-size:30px;
 }
