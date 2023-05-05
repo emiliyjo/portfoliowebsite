@@ -1,0 +1,108 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+@font-face{
+  font-family:"futura";
+  font-style:normal;
+  font-weight:400;
+  src:url("https://cdn.glitch.global/06373d34-df45-4367-9db1-37243713d650/futur.ttf?v=1682971955425");
+}
+
+.left{
+  width:30%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  
+}
+
+.menu{
+  font-size:8px;
+  padding:160px 30px;
+  font-family:"futura";
+}
+
+.about{
+  font-size:4vw;
+  padding:90px 25px;
+  font-family:futura;
+  position:absolute;
+  bottom:0;
+}
+
+.right{
+  width:70%;
+  height:100%;
+  background-color:black;
+  display:flex;
+  float:right;
+  flex-direction:row;
+  justify-content:center;
+}
+
+.content{
+  color:white;
+  display:flex;
+  flex-direction:row;
+  margin:20px;
+}
+
+.img{
+  width:100%;
+  height:80vh;
+  display:flex;
+}
+
+.text{
+  display:flex;
+  flex-flow:column wrap;
+  flex-wrap:wrap;
+  margin:20px;
+  padding:50px;
+  font-family:"futura";
+}
+
+button{
+  font-size:18px;
+  width:40px;
+  font-family:"futura";
+  border:none;
+  background-color: inherit;
+  text-align:left;
+  padding:10px;
+  display:flex;
+
+}
+
+.menu h2{
+  padding:9px;
+}
+
+.menu button:hover{
+      color:white;
+   -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
